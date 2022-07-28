@@ -251,6 +251,12 @@ hr {
     background-color: #f8f8f8;
 }
 
+.section--clients {
+    background: url("../images/clients-bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .section__header {
     width: 100%;
     max-width: 950px;
@@ -549,12 +555,13 @@ hr {
 }
 
 .reviews__item {
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
 }
 
 .reviews__photo {
     border: 2px solid #94e1d3;
+    border-radius: 50%;
 
     position: absolute;
     top: 0;
@@ -654,4 +661,125 @@ hr {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* Works */
+
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .2s linear;
+}
+
+.works__info {
+    width: 100%;
+    padding: 0 15px;
+
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works__title{
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Clients */
+
+.clients {
+    margin-top: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    margin-bottom: 60px;
+
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+}
+
+.clients__photo {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__name {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.clients__prof {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #333;
+}
+
+.clients__text {
+    font-size: 15px;
+    color: #999;
+}
+
+.clients__text::before {
+    margin: 15px 0;
+
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181 ;
 }
