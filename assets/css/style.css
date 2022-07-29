@@ -783,3 +783,37 @@ hr {
     height: 3px;
     background-color: #f38181 ;
 }
+
+/* Blog */
+
+.blog {
+    display: flex;
+}
+
+.blog__item {
+    width: 30%;
+}
+
+.blog__header {
+    position: relative;
+}
+
+.blog__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date {
+    background-color: #95e1d3;
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.blog__date-day {
+    font-size: 30px;
+    font-weight: 700;
+}
