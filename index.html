@@ -11,16 +11,18 @@
 </head>
 
 <body>
-    <header class="header">
+
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">MoGo</div>
-                <nav class="nav">
-                    <a class="nav__link active" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <div class="header__logo" data-scroll="#intro">MoGo</div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link active" href="#" data-scroll="#about">About</a>
+                    <a class="nav__link" href="#" data-scroll="#service">Service</a>
+                    <a class="nav__link" href="#" data-scroll="#work">Work</a>
+                    <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav__link" href="#">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
@@ -29,8 +31,8 @@
                     </a>
                 </nav>
 
-                <button class="nav-toogle" type="button">
-                    <span class="nav-toogle__item">Menu</span>
+                <button class="nav-toggle" type="button" id="nav_toggle">
+                    <span class="nav-toggle__item">Menu</span>
                 </button>
 
             </div>
@@ -39,7 +41,8 @@
 
     <div class="page">
 
-    <div class="intro">
+    <!-- Intro -->
+    <div class="intro" id="intro">
 
         <div class="container">
             <div class="intro__inner">
@@ -74,7 +77,8 @@
 
     </div> <!-- /.intro -->
 
-    <section class="section">
+    <!-- About -->
+    <section class="section" id="about">
         <div class="container">
 
             <div class="section__header">
@@ -117,6 +121,7 @@
         </div> <!-- /.container -->
     </section>
 
+    <!-- Statistics -->
     <div class="statistics">
         <div class="container">
 
@@ -146,7 +151,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- Services -->
+    <section class="section" id="service">
         <div class="container">
 
             <div class="section__header">
@@ -203,6 +209,7 @@
         </div> <!-- /.container-->
     </section>
 
+    <!-- Devices -->
     <section class="section section--devices">
         <div class="container">
 
@@ -218,6 +225,7 @@
         </div>
     </section>
 
+    <!-- We do -->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -274,6 +282,7 @@
         </div>
     </section>
     
+    <!-- Reviews 1 -->
     <div class="section section--gray">
         <div class="container">
             <div class="reviews">
@@ -290,6 +299,7 @@
         </div>
     </div> <!-- /.section section--gray-->
 
+    <!-- Team -->
     <section class="section">
         <div class="container">
 
@@ -390,6 +400,7 @@
         </div> <!-- /.container -->
     </section>
 
+    <!-- Logos -->
     <div class="section section--gray">
         <div class="container">
             
@@ -417,7 +428,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- Works -->
+    <section class="section" id="work">
         <div class="container">
 
             <div class="section__header">
@@ -498,6 +510,7 @@
 
     </section>
 
+    <!-- Revievs 2 -->
     <div class="section">
         <div class="container">
             <div class="reviews">
@@ -514,6 +527,7 @@
         </div>
     </div> <!-- /.section-->
 
+    <!-- Clients -->
     <section class="section section--clients">
         <div class="container">
             <div class="section__header">
@@ -560,7 +574,8 @@
 
     </section>
 
-    <section class="section">
+    <!-- Blog -->
+    <section class="section" id="blog">
         <div class="container">
 
             <div class="section__header">
@@ -660,6 +675,7 @@
         </div> <!--container -->
     </section>
 
+    <!-- Map -->
     <section class="section section--map">
         <div class="container">
             <div class="map">
@@ -671,7 +687,8 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" id="footer">
         <div class="container">
 
             <div class="footer__inner"> 
@@ -779,6 +796,11 @@
     </footer>
 
 </div> <!-- /.page-->
+
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script src="assets/js/app.js"></script>
 
 </body>
 

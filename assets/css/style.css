@@ -56,6 +56,7 @@ hr {
 }
 
 .header.fixed {
+    padding: 10px 0;
 
     background-color: #eb8b8d;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
@@ -137,9 +138,9 @@ hr {
     color: #fce38a;
 }
 
-/* Nav-toogle */
+/* nav-toggle */
 
-.nav-toogle {
+.nav-toggle {
     width: 30px;
     padding: 10px 0;
     display: none;
@@ -157,11 +158,15 @@ hr {
     z-index: 1;
 }
 
-.nav-toogle.active .nav-toogle__item {
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle.active .nav-toggle__item {
     background: none;
 }
 
-.nav-toogle__item {
+.nav-toggle__item {
     display: block;
     width: 100%;
     height: 3px;
@@ -178,8 +183,8 @@ hr {
     transition: background .2s linear;
 }
 
-.nav-toogle__item::before,
-.nav-toogle__item::after {
+.nav-toggle__item::before,
+.nav-toggle__item::after {
     content: "";
     width: 100%;
     height: 3px;
@@ -191,21 +196,21 @@ hr {
     z-index: 1;
 }
 
-.nav-toogle__item::before {
+.nav-toggle__item::before {
     top: -8px;
 }
 
-.nav-toogle__item::after {
+.nav-toggle__item::after {
     bottom: -8px;
 }
 
-.nav-toogle.active .nav-toogle__item:before {
+.nav-toggle.active .nav-toggle__item:before {
     transform-origin: left top;
     transform: rotate(45deg) translateX(-2px);
     transition: transform .2s linear;
 }
 
-.nav-toogle.active .nav-toogle__item::after {
+.nav-toggle.active .nav-toggle__item::after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translateX(-3px);
     transition: transform .2s linear;
@@ -1415,15 +1420,19 @@ hr {
         background-color: #eb8b8d;
     }
 
+    .nav.active {
+        display: block;
+    }
+
     .nav__link {
         display: block;
         margin: 0;
         padding: 8px 20px;
     }
 
-    /* Nav-toogle */
+    /* nav-toggle */
 
-    .nav-toogle {
+    .nav-toggle {
         display: block;
     }
 
