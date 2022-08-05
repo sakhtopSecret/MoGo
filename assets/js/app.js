@@ -2,7 +2,7 @@ $(function() {
 
     var header = $("#header"),
         introH = $("#intro").innerHeight(),
-        scrollOffset = $(window).scrollTop();
+        scrollOffset = ($(window).scrollTop());
         
 
     /* Fixed Header */
@@ -18,8 +18,10 @@ $(function() {
 
     function checkScroll(scrollOffset) {
 
-        if(scrollOffset >= introH -1) {
+        if(scrollOffset >= (introH -68)) {
             header.addClass("fixed");
+            console.log(scrollOffset);
+            console.log(introH);
         } else {
             header.removeClass("fixed");
         }
@@ -38,10 +40,11 @@ $(function() {
         $("#nav a").removeClass("active");
         $this.addClass("active");
         $("#nav").removeClass("active");
+        $("#nav_toggle").removeClass("active");
         
 
         $("html, body").animate ({
-            scrollTop: blockOffset
+            scrollTop: (blockOffset -68)
         }, 500)
 
     });

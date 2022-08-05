@@ -180,7 +180,7 @@ hr {
     left: 0;
     margin: auto;
 
-    transition: background .2s linear;
+    /* transition: background .2s linear; */
 }
 
 .nav-toggle__item::before,
@@ -207,13 +207,13 @@ hr {
 .nav-toggle.active .nav-toggle__item:before {
     transform-origin: left top;
     transform: rotate(45deg) translateX(-2px);
-    transition: transform .2s linear;
+    /* transition: transform .2s linear; */
 }
 
 .nav-toggle.active .nav-toggle__item::after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translateX(-3px);
-    transition: transform .2s linear;
+    /* transition: transform .2s linear; */
 }
 
 /* Intro */
