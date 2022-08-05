@@ -18,7 +18,7 @@ $(function() {
 
     function checkScroll(scrollOffset) {
 
-        if(scrollOffset >= (introH -68)) {
+        if(scrollOffset >= (introH -69)) { /* Срабатывание шапки при перехоче через nav_active к секции about (-68 + (-1px)) */
             header.addClass("fixed");
             console.log(scrollOffset);
             console.log(introH);
@@ -44,7 +44,7 @@ $(function() {
         
 
         $("html, body").animate ({
-            scrollTop: (blockOffset -68)
+            scrollTop: (blockOffset -68) /* Оставить отступ сверху, чтобы header не заезжал на заголовок */
         }, 500)
 
     });
