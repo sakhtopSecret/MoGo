@@ -61,7 +61,7 @@ $(function() {
 
     /* Collapse */
 
-    $("[data-collapse").on("click", function(event) {
+    $("[data-collapse]").on("click", function(event) {
         event.preventDefault();
 
         var $this = $(this),
@@ -69,7 +69,6 @@ $(function() {
 
         
         $this.toggleClass("active");
-        
     });
 
     /* Slider */
