@@ -59,17 +59,29 @@ $(function() {
         
     });
 
-    /* Collapse */
+    /* Collapse, Accordeon */
 
     $("[data-collapse]").on("click", function(event) {
         event.preventDefault();
 
-        var $this = $(this),
-            blockId = $this.data('collapse');
+        var $this = $(this);
 
         
         $this.toggleClass("active");
     });
+
+    /* При клике на accordion__header срабатывает функция f_acc */
+
+    $('#accordion .accordion__header').on('click', f_acc);
+
+    /* Функция анимации Accordion */
+
+    function f_acc(){
+        //скрываем все кроме того, что должны открыть
+          $('#accordion .accordion__content').not($(this).next()).slideUp(1000);
+        // открываем или скрываем блок под заголовком, по которому кликнули
+            $(this).next().slideToggle(500);
+        }
 
     /* Slider */
 
