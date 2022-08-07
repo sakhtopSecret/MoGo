@@ -59,17 +59,8 @@ $(function() {
         
     });
 
-    /* Collapse, Accordeon */
-
-    $("[data-collapse]").on("click", function(event) {
-        event.preventDefault();
-
-        var $this = $(this);
-
-        
-        $this.toggleClass("active");
-    });
-
+    /* Accordion */
+    
     /* При клике на accordion__header срабатывает функция f_acc */
 
     $('#accordion .accordion__header').on('click', f_acc);
